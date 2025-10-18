@@ -1,0 +1,154 @@
+<nav class="fixed w-full top-0 z-50 bg-[#3A2416]/95 backdrop-blur-sm border-b border-[#A08C6D]/20 font-[Montserrat]">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center space-x-3">
+      <img src="Assets/logo.jpeg"
+           onerror="this.src='https://placehold.co/48x48/A08C6D/3A2416?text=KS'"
+           alt="Krans Safaris Logo"
+           class="h-12 w-auto rounded-md shadow-lg">
+      <span class="text-[#E0DCCA] tracking-[0.2em] text-lg font-normal uppercase">
+        Krans Safaris
+      </span>
+    </a>
+
+    <!-- Desktop Menu (Spacing reduced from space-x-10 to space-x-8) -->
+    <div class="hidden md:flex items-center space-x-8 text-[#E0DCCA] text-sm font-light tracking-widest uppercase">
+
+      <a href="index.html" class="hover:text-[#A08C6D] transition-colors duration-300">Home</a>
+      <a href="index.html#about-us" class="hover:text-[#A08C6D] transition-colors duration-300">About</a>
+
+      <!-- Safari Experiences Dropdown (Now uses <a> tag for the main link) -->
+      <div class="relative group h-full flex items-center" tabindex="0">
+        <!-- Removed focus:outline-none as it's not needed -->
+        <a href="experiences.html" class="uppercase hover:text-[#A08C6D] transition-colors duration-300 py-4">
+          Safari Experiences
+        </a>
+        <div
+          class="absolute left-1/2 -translate-x-1/2 top-full w-64 rounded-sm border border-[#A08C6D]/30 bg-[#3A2416] shadow-xl
+                 opacity-0 scale-95 pointer-events-none
+                 group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto
+                 focus-within:opacity-100 focus-within:scale-100 focus-within:pointer-events-auto
+                 transition duration-300 ease-out origin-top">
+          <a href="hunting.html" class="block px-6 py-3 text-left text-[#E0DCCA] hover:bg-[#A08C6D]/10 hover:text-[#A08C6D] transition-all duration-200">
+            Hunting Safaris
+          </a>
+          <a href="fishing.html" class="block px-6 py-3 text-left text-[#E0DCCA] hover:bg-[#A08C6D]/10 hover:text-[#A08C6D] transition-all duration-200">
+            Fishing Excursions
+          </a>
+          <a href="leisure.html" class="block px-6 py-3 text-left text-[#E0DCCA] hover:bg-[#A08C6D]/10 hover:text-[#A08C6D] transition-all duration-200">
+            Scenic & Leisure Activities
+          </a>
+        </div>
+      </div>
+
+     <a href="rates.html" class="hover:text-[#A08C6D] transition-colors duration-300">Rates & Packages</a>
+
+      <a href="gallery.html" class="hover:text-[#A08C6D] transition-colors duration-300">Gallery</a>
+      
+      <!-- NEW CONTACT LINK -->
+      <a href="contact.html" class="hover:text-[#A08C6D] transition-colors duration-300">Contact</a>
+
+      <a href="contact.html"
+         class="bg-[#A08C6D] text-[#3A2416] px-5 py-2 rounded-sm hover:bg-[#B7A384] transition-colors uppercase text-sm font-medium tracking-widest ml-4">
+        Book Now
+      </a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <button id="menu-btn" class="md:hidden text-[#E0DCCA] focus:outline-none" aria-label="Toggle menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu"
+       class="hidden md:hidden bg-[#3A2416] border-t border-[#A08C6D]/30 text-[#E0DCCA] text-base absolute top-full left-0 w-full z-40">
+    <div class="px-6 py-4 space-y-3 uppercase tracking-wider font-light">
+      <a href="index.html" class="block hover:text-[#A08C6D] transition-colors">Home</a>
+      <a href="index.html#about-us" class="block hover:text-[#A08C6D] transition-colors">About</a>
+
+      <details class="py-1">
+        <summary class="cursor-pointer hover:text-[#A08C6D] transition-colors list-none flex justify-between items-center">
+          <!-- The text is correctly wrapped in an <a> tag pointing to the main experiences page -->
+          <a href="experiences.html" class="hover:text-[#A08C6D] transition-colors">
+            Safari Experiences
+          </a>
+          <svg class="w-4 h-4 transform group-open:rotate-180 transition-transform duration-200"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </summary>
+        <div class="pl-4 border-l border-[#A08C6D]/30 mt-2 space-y-1">
+          <a href="hunting.html" class="block py-1 hover:text-[#A08C6D] transition-colors text-sm">Hunting Safaris</a>
+          <a href="fishing.html" class="block py-1 hover:text-[#A08C6D] transition-colors text-sm">Fishing Excursions</a>
+          <a href="leisure.html" class="block py-1 hover:text-[#A08C6D] transition-colors text-sm">Scenic & Leisure Activities</a>
+        </div>
+      </details>
+
+      <details class="py-1">
+        <summary class="cursor-pointer hover:text-[#A08C6D] transition-colors list-none flex justify-between items-center">
+          Rates & Packages
+          <svg class="w-4 h-4 transform group-open:rotate-180 transition-transform duration-200"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </summary>
+        <div class="pl-4 border-l border-[#A08C6D]/30 mt-2 space-y-1">
+          <a href="#" class="block py-1 hover:text-[#A08C6D] transition-colors text-sm">Daily Rates & Fees</a>
+          <a href="#" class="block py-1 hover:text-[#A08C6D] transition-colors text-sm">Trophy Price List</a>
+          <a href="#" class="block py-1 hover:text-[#A08C6D] transition-colors text-sm">What’s Included & Excluded</a>
+        </div>
+      </details>
+
+      <a href="gallery.html" class="block hover:text-[#A08C6D] transition-colors">Gallery</a>
+      <a href="contact.html" class="block hover:text-[#A08C6D] transition-colors">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        // Toggles the 'hidden' class to show/hide the mobile menu
+        mobileMenu.classList.toggle('hidden');
+        
+        // Toggle the hamburger icon to an 'X' or similar to indicate menu is open
+        const svg = menuBtn.querySelector('svg');
+        if (svg) {
+            if (mobileMenu.classList.contains('hidden')) {
+                // Menu is closed, show hamburger icon
+                svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
+            } else {
+                // Menu is open, show close icon (simple X)
+                svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>';
+            }
+        }
+      });
+      
+      // Close mobile menu when a link inside it is clicked
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+              // Only hide if the menu is visible
+              if (!mobileMenu.classList.contains('hidden')) {
+                  mobileMenu.classList.add('hidden');
+                  // Reset icon state
+                  const svg = menuBtn.querySelector('svg');
+                  if (svg) {
+                      svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
+                  }
+              }
+          });
+      });
+    }
+  });
+</script>

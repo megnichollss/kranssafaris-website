@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krans Safaris | Contact Us</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJzL2RYxHF0K9lY/RMz8YQhJ5FjNfWlJqF6c3R5T4B5K6iN6Q4wE5X5t5J5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /* * GLOBAL STYLES & TYPOGRAPHY 
+     * NOTE: Full-page background image removed for better readability in the main content area.
+     */
+    body {
+      background-color: #F8F7F3; /* Very light cream/khaki background for the page */
+      color: #333333; /* Darker text for contrast on light backgrounds */
+    }
+    .font-serif-display {
+      font-family: 'Playfair Display', serif;
+    }
+    .font-sans-body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    /* Color Palette */
+    .text-accent {
+        color: #A08C6D; /* Gold/khaki accent */
+    }
+    .bg-accent {
+        background-color: #A08C6D;
+    }
+    .text-light {
+        color: #E0DCCA; /* Light color for text on dark backgrounds */
+    }
+    
+    /* * HERO IMAGE STYLES 
+     * NOTE: The full background image is now only applied to the hero section.
+     */
+    #hero-contact {
+        /* Replace with your image path */
+        background-image: url('Assets/WhatsApp Image 2025-10-14 at 12.20.56 (1).jpeg'); 
+        background-size: cover;
+        /* Adjust positioning to keep the focal point visible, especially on mobile */
+        background-position: center 20%; 
+    }
+
+    /* Media query to adjust hero height and background position for mobile screens */
+    @media (max-width: 767px) {
+        #hero-contact {
+            height: 40vh; /* Slightly shorter hero on mobile */
+            background-position: center 30%; /* Tweak focus area for small screens */
+        }
+    }
+  </style>
+</head>
+
+<body class="font-sans-body pt-24 min-h-screen">
+  <div id="navbar"></div>
+
+  <main>
+    <section id="hero-contact" class="h-[50vh] flex items-center justify-center relative mb-24">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 text-center px-6 py-12">
+            <h1 class="font-serif-display text-5xl md:text-7xl font-light leading-tight text-light">
+                Get In Touch
+            </h1>
+        </div>
+    </section>
+
+    <section class="mt-[-6rem] md:mt-[-8rem] px-4 sm:px-6 max-w-4xl mx-auto relative z-20 pb-16">
+        
+        <div class="flex flex-col items-center">
+
+            <div class="bg-white p-8 md:p-16 rounded-lg shadow-2xl shadow-gray-700/20 max-w-2xl w-full transition duration-300">
+                
+                <h2 class="font-serif-display text-4xl text-center mb-2 text-gray-800">
+                    Contact Krans Safaris
+                </h2>
+                <p class="text-gray-600 mb-10 text-center max-w-md mx-auto">
+                    We look forward to hearing from you and planning your customized safari experience.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    
+                    <div class="flex flex-col items-center text-center p-4 rounded-lg hover:border-accent transition-colors duration-300">
+                        <i class="fas fa-phone-alt text-4xl text-accent mb-4"></i>
+                        <span class="block uppercase text-xs tracking-widest text-gray-500 mb-1">Call Ross</span>
+                        <a href="tel:+27664759352" class="font-serif-display text-2xl font-bold text-gray-800 hover:text-accent transition-colors duration-300 break-words">
+                            (+27) 066 475 9352
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center p-4 rounded-lg hover:border-accent transition-colors duration-300">
+                        <i class="fas fa-envelope text-4xl text-accent mb-4"></i>
+                        <span class="block uppercase text-xs tracking-widest text-gray-500 mb-1">Send an Email</span>
+                        <a href="mailto:hunts@kranssafaris.co.za" class="font-serif-display text-lg sm:text-xl font-bold text-gray-800 hover:text-accent transition-colors duration-300 break-words">
+                            hunts@kranssafaris.co.za
+                        </a>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    // FIX: Define and run the menu function after the navbar is loaded
+    function initMobileMenu() {
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    }
+
+    // Load navbar and footer components
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+        initMobileMenu(); // Activate menu script after injection
+      });
+    
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+</html>

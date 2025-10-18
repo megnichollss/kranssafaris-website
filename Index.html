@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krans Safaris | Experience the Eastern Cape</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      /* Deep charcoal/black background */
+      background-color: #1A1A1A; 
+      color: #E0DCCA; /* Soft khaki text */
+    }
+    .font-serif-display {
+      font-family: 'Playfair Display', serif;
+    }
+    .font-sans-body {
+        font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="font-sans-body">
+  <div id="navbar"></div>
+
+  <section class="relative h-screen flex flex-col justify-center items-center text-center overflow-hidden">
+    <img src="Assets/WhatsApp Image 2025-10-14 at 12.20.57.jpeg" class="absolute inset-0 w-full h-full object-cover brightness-50 contrast-110">
+    <div class="absolute inset-0 bg-black/30"></div> 
+    
+    <div class="relative z-10 px-6 max-w-4xl pt-24 md:pt-0">
+      <p class="text-sm md:text-base text-[#A08C6D] font-light tracking-[0.3em] uppercase mb-4">
+        A Secluded Sanctuary in South Africa
+      </p>
+      
+      <h1 class="font-serif-display text-5xl md:text-7xl font-light leading-snug text-[#E0DCCA] mb-8 drop-shadow-xl">
+        Experience the Eastern Cape with Krans Safaris
+      </h1>
+      
+      <p class="max-w-3xl mx-auto text-lg text-[#E0DCCA] font-light mb-12 leading-relaxed opacity-90">
+        Hunting, fishing and more in the most scenic destinations of the Eastern Cape.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-5 justify-center">
+        <a href="experiences.html" class="bg-[#A08C6D] text-[#3A2416] px-10 py-3 rounded-sm hover:bg-[#B7A384] transition uppercase text-sm font-medium tracking-widest shadow-md">
+          View Experiences
+        </a>
+        <a href="contact.html" class="border border-[#A08C6D] text-[#E0DCCA] px-10 py-3 rounded-sm hover:bg-[#A08C6D]/20 transition uppercase text-sm font-medium tracking-widest">
+          Book With Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main class="py-20 px-6 max-w-7xl mx-auto">
+    
+    <section id="about-us" class="pt-10 md:pt-20 scroll-mt-20">
+        <div class="md:grid md:grid-cols-2 md:gap-12 lg:gap-20 items-center">
+            
+            <div class="order-2 md:order-1 mb-10 md:mb-0">
+                <p class="text-sm text-[#A08C6D] font-light tracking-[0.2em] uppercase mb-4">
+                    Our Heritage
+                </p>
+                <h2 class="font-serif-display text-4xl lg:text-5xl font-light leading-tight text-[#E0DCCA] mb-6">
+                    Family Run. Passion Driven. Authentically South African.
+                </h2>
+                <div class="space-y-6 text-lg text-gray-300 opacity-90">
+                    <p>
+                        Offering both hunting and fishing in the most scenic destinations of the Eastern Cape.
+                    </p>
+                    <p>
+                        Krans Safaris is owned, managed and run hands on by the Lindhorst family. With years of experience Ross and his team have created a unique and relaxed South African Safari.
+                    </p>
+                    <p>
+                        Discover what Krans Safaris has to offer, a secluded sanctuary designed for a family-focused adventure that offers a private safari experience.
+                    </p>
+                </div>
+                <a href="experiences.html" class="inline-block mt-8 bg-[#A08C6D] text-[#3A2416] px-8 py-3 rounded-sm hover:bg-[#B7A384] transition uppercase text-sm font-medium tracking-widest shadow-md">
+                    View Experiences
+                </a>
+            </div>
+            
+            <div class="order-1 md:order-2">
+                <img src="Assets/WhatsApp Image 2025-10-14 at 12.23.32 (2).jpeg" alt="Hunting trophies and lodge at Krans Safaris" class="w-full h-auto object-cover rounded-sm shadow-xl border border-[#A08C6D]/20">
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <div id="footer"></div>
+
+  <script>
+    function initMobileMenu() {
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (menuBtn && mobileMenu) {
+        
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+   
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+      }
+    }
+
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+        initMobileMenu();
+      });
+    
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+</script>
+
+</body>
+</html>

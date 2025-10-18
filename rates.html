@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krans Safaris | Rates & Packages</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Lighter background, Darker text for a light/high-end feel */
+    body {
+      background-color: #F8F7F3; /* Very light cream/khaki for the 'lighter look' */
+      color: #3A2416; /* Dark brown/charcoal for main text to contrast */
+    }
+    .font-serif-display {
+      font-family: 'Playfair Display', serif;
+    }
+    .font-sans-body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    /* Re-defining the accent colors for this lighter page for better contrast */
+    .text-accent {
+        color: #A08C6D; /* Your gold/khaki accent */
+    }
+    .bg-accent {
+        background-color: #A08C6D;
+    }
+    .border-accent {
+        border-color: #A08C6D;
+    }
+    .text-light {
+        color: #E0DCCA; /* The light text color from index.html, used here for contrast elements */
+    }
+    /* Simple table styling using Tailwind utility classes */
+    .rates-table th, .rates-table td {
+        padding: 1rem;
+        text-align: left;
+    }
+    .rates-table thead th {
+        border-bottom: 2px solid #A08C6D;
+    }
+    .rates-table tbody tr:nth-child(even) {
+        background-color: #F0EEE9; /* Subtle zebra striping */
+    }
+  </style>
+</head>
+
+<body class="font-sans-body pt-24">
+  <div id="navbar"></div>
+
+  <main class="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+    
+    <!-- Header Section -->
+    <section class="mb-16 md:mb-24">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-serif-display text-5xl lg:text-7xl font-light leading-tight mb-4 text-accent">
+                Safari Rates & Packages
+            </h1>
+            <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+                Detailed pricing for daily rates, fees, and the trophy price list. All prices are in USD and exclude VAT.
+            </p>
+        </div>
+    </section>
+
+    <!-- Daily Rates and Included/Excluded Section (max-w-6xl) -->
+    <section class="max-w-6xl mx-auto mb-16 md:mb-24">
+        <h2 class="font-serif-display text-4xl font-light leading-tight mb-12 text-accent border-b border-accent/30 pb-4 text-center">
+            Daily Rates & Essential Fees
+        </h2>
+        
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 border border-gray-200 p-8 md:p-12 rounded-sm shadow-lg bg-white/70 backdrop-blur-sm">
+            
+            <!-- Column 1: Daily Rates & Base Fees -->
+            <div class="lg:border-r lg:border-gray-300 lg:pr-10">
+                <h3 class="font-serif-display text-3xl font-light mb-6 text-accent pb-2">Hunter & Observer Rates</h3>
+                
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>1x Professional Hunter + 1 Client (Daily Rate)</span>
+                        <span class="font-semibold text-accent w-24 text-right flex-shrink-0">$500 USD</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>1x Professional Hunter + 2 Clients (Daily Rate)</span>
+                        <span class="font-semibold text-accent w-24 text-right flex-shrink-0">$600 USD</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Observer Day Fee</span>
+                        <span class="font-semibold text-accent w-24 text-right flex-shrink-0">$250 USD</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>First night in camp + Airport Transfer</span>
+                        <span class="font-semibold text-accent w-24 text-right flex-shrink-0">$300 USD</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Trophy Handling Fee (per safari)</span>
+                        <span class="font-semibold text-accent w-24 text-right flex-shrink-0">$200 USD</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-gray-200 pb-2">
+                        <span>Rifle Hire (per safari)</span>
+                        <span class="font-semibold text-accent w-24 text-right flex-shrink-0">$250 USD</span>
+                    </li>
+                    <li class="flex justify-between items-center pb-2">
+                        <span>Ammunition (per round)</span>
+                        <span class="font-semibold text-accent w-24 text-right flex-shrink-0">$6 USD</span>
+                    </li>
+                </ul>
+
+                <p class="text-sm mt-8 italic text-red-700">Note: All prices are in USD and exclude VAT.</p>
+            </div>
+
+            <!-- Column 2: What's Included & Excluded (NOW STACKED) -->
+            <div>
+                <h3 class="font-serif-display text-3xl font-light mb-6 text-accent pb-2">Inclusions & Exclusions</h3>
+                
+                <!-- STACKED LAYOUT: Removed grid sm:grid-cols-2 -->
+                <div class="space-y-8">
+                    
+                    <!-- Prices Include -->
+                    <div>
+                        <h4 class="font-semibold mb-3 uppercase tracking-wide text-md text-accent border-b border-gray-300 pb-1">Included:</h4>
+                        <ul class="space-y-2 text-gray-700 list-disc list-inside ml-2 text-sm">
+                            <li>Pick up and drop off (Agreed location)</li>
+                            <li>Hunting license fees</li>
+                            <li>Professional hunter (vehicle & tracker)</li>
+                            <li>Support crew, camp staff, skinners and chefs</li>
+                            <li>Transport while on safari</li>
+                            <li>All meals, beverages, WiFi, and laundry</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Prices Not Included (Now directly below Included) -->
+                    <div class="pt-4 border-t border-gray-200">
+                        <h4 class="font-semibold mb-3 uppercase tracking-wide text-md text-accent border-b border-gray-300 pb-1">Not Included:</h4>
+                        <ul class="space-y-2 text-gray-700 list-disc list-inside ml-2 text-sm">
+                            <li>International and domestic flights</li>
+                            <li>Shipping & taxidermy</li>
+                            <li>Trophy handling fees (per safari)</li>
+                            <li>Rifle hire & ammunition per safari</li>
+                            <li>Gratuities for staff & professional hunter</li>
+                            <li>Meals & liquor outside of camps & hunting areas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trophy Price List Section (NOW max-w-6xl to match the section above) -->
+    <section class="max-w-6xl mx-auto mb-16 md:mb-24">
+        <h2 class="font-serif-display text-4xl font-light leading-tight mb-12 text-accent border-b border-accent/30 pb-4 text-center">
+            Trophy Price List (USD)
+        </h2>
+        
+        <!-- Mobile/Small Screen List View (Visible by default, hidden on large screens) -->
+        <div class="block lg:hidden rounded-sm shadow-xl border border-gray-300 bg-white/90 p-6">
+            <!-- Now a single column vertical list for perfect price alignment on mobile -->
+            <div class="space-y-3 text-sm md:text-base">
+                
+                <!-- Species list merged into one vertical list -->
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Impala</span>
+                    <span class="text-accent font-semibold">$650</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Gemsbuck (Oryx)</span>
+                    <span class="text-accent font-semibold">$1 700</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Blesbuck</span>
+                    <span class="text-accent font-semibold">$700</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Red Hartebeest</span>
+                    <span class="text-accent font-semibold">$1 350</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Springbuck</span>
+                    <span class="text-accent font-semibold">$650</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Lechwe</span>
+                    <span class="text-accent font-semibold">$2 950</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Warthog</span>
+                    <span class="text-accent font-semibold">$950</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Eland</span>
+                    <span class="text-accent font-semibold">$3 700</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Mountain Reedbuck</span>
+                    <span class="text-accent font-semibold">$750</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Ostrich</span>
+                    <span class="text-accent font-semibold">$600</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Zebra</span>
+                    <span class="text-accent font-semibold">$1 000</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Baboon</span>
+                    <span class="text-accent font-semibold">$350</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Grey Duiker</span>
+                    <span class="text-accent font-semibold">$350</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Bushpig</span>
+                    <span class="text-accent font-semibold">$1 000</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Fallow Deer</span>
+                    <span class="text-accent font-semibold">$1 200</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Bushbuck</span>
+                    <span class="text-accent font-semibold">$1 650</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Kudu</span>
+                    <span class="text-accent font-semibold">$2 800</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Nyala</span>
+                    <span class="text-accent font-semibold">$2 800</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Roan</span>
+                    <span class="text-accent font-semibold">POR</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Sable</span>
+                    <span class="text-accent font-semibold">POR</span>
+                </div>
+                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+                    <span class="font-medium">Cape Buffalo</span>
+                    <span class="text-accent font-semibold">POR</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Desktop Table View (Hidden on mobile, visible on large screens) -->
+        <div class="hidden lg:block rounded-sm shadow-xl border border-gray-300">
+            <table class="w-full rates-table bg-white/90">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="uppercase tracking-wider text-xs font-bold text-gray-600">Species</th>
+                        <th class="uppercase tracking-wider text-xs font-bold text-gray-600">Price (USD)</th>
+                        <th class="uppercase tracking-wider text-xs font-bold text-gray-600">Species</th>
+                        <th class="uppercase tracking-wider text-xs font-bold text-gray-600">Price (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Impala</td><td>$650</td><td>Gemsbuck (Oryx)</td><td>$1 700</td></tr>
+                    <tr><td>Blesbuck</td><td>$700</td><td>Red Hartebeest</td><td>$1 350</td></tr>
+                    <tr><td>Springbuck</td><td>$650</td><td>Lechwe</td><td>$2 950</td></tr>
+                    <tr><td>Warthog</td><td>$950</td><td>Eland</td><td>$3 700</td></tr>
+                    <tr><td>Mountain Reedbuck</td><td>$750</td><td>Ostrich</td><td>$600</td></tr>
+                    <tr><td>Zebra</td><td>$1 000</td><td>Baboon</td><td>$350</td></tr>
+                    <tr><td>Grey Duiker</td><td>$350</td><td>Bushpig</td><td>$1 000</td></tr>
+                    <tr><td>Fallow Deer</td><td>$1 200</td><td>Bushbuck</td><td>$1 650</td></tr>
+                    <tr><td>Kudu</td><td>$2 800</td><td>Nyala</td><td>$2 800</td></tr>
+                    <tr><td>Roan</td><td>POR</td><td>Sable</td><td>POR</td></tr>
+                    <tr><td>Cape Buffalo</td><td>POR</td><td>&mdash;</td><td>&mdash;</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="text-sm mt-4 italic text-gray-600 text-center">
+            POR: Price on Request (subject to quota availability and market price).
+        </p>
+    </section>
+
+    <!-- Booking, Deposit & Policy Section -->
+    <section class="max-w-4xl mx-auto text-center pt-8 border-t border-accent/30">
+        <h2 class="font-serif-display text-4xl font-light leading-tight mb-12 text-accent">
+            Booking & Cancellation Policies
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+            
+            <div class="p-6 border border-gray-200 rounded-sm shadow-sm bg-white/70">
+                <h3 class="font-semibold mb-3 uppercase tracking-wide text-md text-accent">Rates & Bookings</h3>
+                <p class="text-gray-700 text-sm">All prices and quotes are in USD and are subject to change per season. Once you contact us with your enquiry, bookings will take place directly with Krans Safaris.</p>
+            </div>
+
+            <div class="p-6 border border-gray-200 rounded-sm shadow-sm bg-white/70">
+                <h3 class="font-semibold mb-3 uppercase tracking-wide text-md text-accent">Deposits & Payment</h3>
+                <p class="text-gray-700 text-sm">A minimum of 40% of the total daily rate is needed to confirm your booking. Full payment is due within a week of arrival. Trophy fees will be settled in full at the end of the hunt.</p>
+            </div>
+            
+           <div class="p-6 border border-gray-200 rounded-sm shadow-sm bg-white/70">
+                <h3 class="font-semibold mb-3 uppercase tracking-wide text-md text-accent">Insurance & Policy</h3>
+                <p class="text-gray-700 text-sm">
+                    We highly recommend that all clients obtain comprehensive travel insurance.
+                </p>
+                <ul class="list-disc list-inside ml-2 mt-2 text-sm text-gray-700">
+                    <li>Less than 6 months prior: Deposit forfeited if dates can't be rescheduled within the same season.</li>
+                    <li class="mt-4">More than 6 months prior: 50% of the booking is non-refundable but can be applied to a future safari within the season.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    function initMobileMenu() {
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (menuBtn && mobileMenu) {
+        
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+   
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+      }
+    }
+
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+        initMobileMenu();
+      });
+    
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+</script>
+</body>
+</html>
